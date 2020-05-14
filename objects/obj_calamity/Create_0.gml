@@ -1,0 +1,1 @@
+calamitySpeed = 1;
