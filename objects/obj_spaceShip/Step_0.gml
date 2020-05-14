@@ -21,7 +21,9 @@ if (!pauseGame){
 		if (shipFuel <= 0){
 			shipSpeed = 0;
 		}else if (shipFuel < (shipSpeed * shipSpeed)){
-			shipSpeed = round(sqrt(shipFuel));
+			shipSpeed = floor(sqrt(shipFuel));
+			
+			if (shipSpeed == 0 ){shipSpeed = 1;}
 		}
 		
 		//checks if you've reached the object
