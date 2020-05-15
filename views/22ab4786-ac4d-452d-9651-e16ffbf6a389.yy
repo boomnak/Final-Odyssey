@@ -10,7 +10,8 @@
         "f272b1c2-4ee9-4904-8a3d-613ccff522f0",
         "0e8452ee-56ab-46ab-b67c-61bba90f5e0b",
         "58aef5fb-a7ac-4147-a301-9d8b2cb86741",
-        "1663b1a4-cbf2-498a-b8c0-b31ec57d369c"
+        "1663b1a4-cbf2-498a-b8c0-b31ec57d369c",
+        "481ee706-9cb8-424d-98be-b8e35f57d542"
     ],
     "filterType": "GMSprite",
     "folderName": "Space",

@@ -12,7 +12,8 @@
         "11718d7a-ce2f-4a8f-a412-36db9efeb01c",
         "66ce309f-bccc-4ead-8b6e-7071bfc4ebc0",
         "781c5e4f-8f18-4f27-b54a-57cbf892d12f",
-        "9134f532-eb68-4e16-add4-4f6cb6b37ee6"
+        "9134f532-eb68-4e16-add4-4f6cb6b37ee6",
+        "8e4c64ae-672d-4edc-86b1-3a0e40d159a5"
     ],
     "filterType": "GMObject",
     "folderName": "Game Objects",

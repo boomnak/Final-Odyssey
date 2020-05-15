@@ -99,7 +99,8 @@ if (!pauseGame){
 					}else if (extractShipParts > 0){
 						extractShipParts = scr_event("alien", extractShipParts);
 					}
-					
+				}else if (irandom_range(0, 50) == 1){		//crew recruitment event
+					scr_event("crew", 1);
 				}
 			}else if (instance_exists(obj_asteroid)){
 				if (obj_asteroid.asteroidFuel >= extractFuel > 0 and shipFuel <= (fuelTank - extractFuel)){
