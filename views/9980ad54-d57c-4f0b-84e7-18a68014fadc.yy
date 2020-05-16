@@ -4,7 +4,6 @@
     "mvc": "1.1",
     "name": "9980ad54-d57c-4f0b-84e7-18a68014fadc",
     "children": [
-        "0fbfafce-0ad5-4875-9d04-150701590fa3",
         "3528af16-708e-4878-a9ba-681a284fa3cf",
         "92951654-ea5d-43d8-a8e9-31dd019a05d8",
         "c63e63bc-aa10-46b7-b666-616ff11cac48",
@@ -22,7 +21,9 @@
         "e1297980-bb84-4179-938c-6be81135fd6b",
         "474a7dc3-c2b1-4bc3-ac72-c16fe2e8e414",
         "1ab91969-9000-464b-ab59-31c27570430f",
-        "2158c3fc-acea-459d-bbd0-5217e89c7da9"
+        "2158c3fc-acea-459d-bbd0-5217e89c7da9",
+        "ed0b164a-6c37-4a8f-a0d5-1d83b5471064",
+        "02e2c852-48fc-4429-ad79-85bef1eb0fc4"
     ],
     "filterType": "GMSprite",
     "folderName": "Menus",

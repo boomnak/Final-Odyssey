@@ -243,11 +243,11 @@ if (!pauseGame){
 	if (alarm[1] == -1){				
 		alarm[1] = room_speed * 5;
 	}else if (alarm[1] == 0){	
-		crewHunger += curCrew;		
+		foodStorage -= curCrew;		
 	}
 
 	//checks for game over scenarios
-	if (crewHunger >= 100 or calamityDistance <= 0 or (totalCrew <= 0 and !planetExtract)){
+	if (foodStorage <= 0 or calamityDistance <= 0 or (totalCrew <= 0 and !planetExtract)){
 		//output game over and total days survived
 		//reset all objects and values
 		room_goto(rm_mainMenu);

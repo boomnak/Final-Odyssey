@@ -1,0 +1,1 @@
+image_xscale = obj_spaceShip.foodStorage/obj_spaceShip.foodBox;

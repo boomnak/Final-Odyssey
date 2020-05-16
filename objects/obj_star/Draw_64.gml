@@ -1,3 +1,5 @@
+draw_set_colour(c_yellow);
+
 if(obj_spaceShip.planetExtract and objCreated){	
 	if (!obj_spaceShip.pauseGame){
 		draw_text(obj_msgBOX.x+5, obj_msgBOX.y, "Star Resources");

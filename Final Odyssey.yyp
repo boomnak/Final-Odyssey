@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "02e2c852-48fc-4429-ad79-85bef1eb0fc4",
+            "Value": {
+                "id": "ecb21a7f-bb4a-4ee8-8d88-7500abb7ef92",
+                "resourcePath": "sprites\\spr_foodMeter\\spr_foodMeter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "05d2aef8-c80c-4bb4-9f14-da68a4c3337b",
             "Value": {
                 "id": "ff317587-0dd7-448d-bc40-a6bd7364f88e",
@@ -51,14 +59,6 @@
             "Value": {
                 "id": "ae2aae5e-884b-4ccb-8387-33467477c692",
                 "resourcePath": "sprites\\spr_alienCard\\spr_alienCard.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "0fbfafce-0ad5-4875-9d04-150701590fa3",
-            "Value": {
-                "id": "81dde782-ef76-4814-9bf0-6e0f8585d153",
-                "resourcePath": "sprites\\spr_eatBTN\\spr_eatBTN.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -391,14 +391,6 @@
             }
         },
         {
-            "Key": "8094430a-289c-4c03-99ac-eb71ee6b5c38",
-            "Value": {
-                "id": "315df334-7429-4999-bf2d-6f1b57fcd530",
-                "resourcePath": "objects\\obj_eatBTN\\obj_eatBTN.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "82017660-f746-4a0a-97c8-6f9651e770d0",
             "Value": {
                 "id": "34999ab7-2a8c-4583-8cb7-c13eb22df137",
@@ -419,6 +411,14 @@
             "Value": {
                 "id": "327e620c-ceb0-490d-a8ae-3705ecbe2d34",
                 "resourcePath": "objects\\obj_um_FuelUpgrade\\obj_um_FuelUpgrade.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8498746b-8c7a-45fc-9099-a3dcda322bea",
+            "Value": {
+                "id": "08470b9e-4b58-4d86-bd86-fe0f78803585",
+                "resourcePath": "objects\\obj_fuelMeter\\obj_fuelMeter.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -815,6 +815,22 @@
             }
         },
         {
+            "Key": "ed0b164a-6c37-4a8f-a0d5-1d83b5471064",
+            "Value": {
+                "id": "faaf2746-9033-4343-8a06-07045eedba4e",
+                "resourcePath": "sprites\\spr_fuelMeter\\spr_fuelMeter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ed40e38a-94fa-4afe-a723-c361ce0e8bb5",
+            "Value": {
+                "id": "f3e03fe4-bb59-46eb-8658-dc5a3bc8f26e",
+                "resourcePath": "notes\\Notepad.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "eef8509a-ed5c-4dc7-90d1-5bcf5fa8982d",
             "Value": {
                 "id": "dcc48360-f7d1-488b-af7b-a0495341a07d",
@@ -867,6 +883,14 @@
             "Value": {
                 "id": "78e25e30-ecc4-41e9-adc2-0b91fc25c5a5",
                 "resourcePath": "objects\\obj_playGame\\obj_playGame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fbd55e82-6723-47e1-b6da-5ca85b8f7a6e",
+            "Value": {
+                "id": "70de8c58-f914-4915-8290-90bc5149f050",
+                "resourcePath": "objects\\obj_foodMeter\\obj_foodMeter.yy",
                 "resourceType": "GMObject"
             }
         }

@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_calamityDistMenu",
     "eventList": [
-        
+        {
+            "id": "d81093fe-284e-47fb-8d4d-9b147424a2ca",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "c1107d3d-c12d-49aa-8214-57f0c0edf572"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

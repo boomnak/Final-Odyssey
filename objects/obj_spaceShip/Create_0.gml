@@ -6,7 +6,6 @@ shipSpeed =	1;
 curSpeed = shipSpeed;
 foodBox = 100;
 foodStorage = foodBox;
-crewHunger = 0;
 calamityDistance = 100;
 nextObj = 0;
 shipParts = 0;
