@@ -15,3 +15,4 @@ if (pauseGame){
 if (shipFuel <= 0){
 	draw_text(0, 120, "NOT ENOUGH FUEL...");
 }
+

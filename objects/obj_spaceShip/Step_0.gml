@@ -75,54 +75,164 @@ if (!pauseGame){
 			
 			//extracts based on objects limited resources
 			if (instance_exists(obj_planet)){		
-				if (obj_planet.planetFood >= extractFood > 0 and foodStorage <= (foodBox - extractFood)){	
-					obj_planet.planetFood -= extractFood;
-					foodStorage += extractFood;
+				if (foodStorage <= (foodBox - extractFood)){	
+					if (obj_planet.planetFood >= extractFood){ 
+						obj_planet.planetFood -= extractFood;
+						foodStorage += extractFood;
+					}else if (obj_planet.planetFood > 0){
+						totalCrew += extractFood - obj_planet.planetFood;
+						extractFood = obj_planet.planetFood;
+						obj_planet.planetFood = 0;
+						foodStorage += extractFood;
+					}
+				}else if (foodStorage > (foodBox - extractFood) and foodStorage < foodBox){
+					
+					totalCrew += extractFood;
+					
+					if (obj_planet.planetFood >= (foodBox - foodStorage)){
+						extractFood = foodBox - foodStorage;
+						obj_planet.planetFood -= extractFood;
+						totalCrew -= extractFood;
+						foodStorage += extractFood;
+					}else if (obj_planet.planetFood > 0){
+						extractFood = obj_planet.planetFood;
+						obj_planet.planetFood = 0;
+						totalCrew -= extractFood;
+						foodStorage += extractFood;
+					}		
 				}
 				
-				if (obj_planet.planetFuel >= extractFuel > 0 and shipFuel <= (fuelTank - extractFuel)){	
+			if (shipFuel <= (fuelTank - extractFuel)){	
+				if (obj_planet.planetFuel >= extractFuel){ 
 					obj_planet.planetFuel -= extractFuel;
 					shipFuel += extractFuel;
+				}else if (obj_planet.planetFuel > 0){
+					totalCrew += extractFuel - obj_planet.planetFuel;
+					extractFuel = obj_planet.planetFuel;
+					obj_planet.planetFuel = 0;
+					shipFuel += extractFuel;
 				}
+			}else if (shipFuel > (fuelTank - extractFuel) and shipFuel < fuelTank){
+						
+				totalCrew += extractFuel;
+					
+				if (obj_planet.planetFuel >= (fuelTank - shipFuel)){
+					extractFuel = fuelTank - shipFuel;
+					obj_planet.planetFuel -= extractFuel;
+					totalCrew -= extractFuel;
+					shipFuel += extractFuel;
+				}else if (obj_planet.planetFuel > 0){
+					extractFuel = obj_planet.planetFuel;
+					obj_planet.planetFuel = 0;
+					totalCrew -= extractFuel;
+					shipFuel += extractFuel;
+				}		
+			}
 				
-				if ((obj_planet.planetParts >= extractShipParts > 0) and shipParts <= (50 - extractShipParts)){
-					obj_planet.planetParts -= extractShipParts;
-					shipParts += extractShipParts;
+				if (shipParts <= (50 - extractShipParts)){	
+					if (obj_planet.planetParts >= extractShipParts){ 
+						obj_planet.planetParts -= extractShipParts;
+						shipParts += extractShipParts;
+					}else if (obj_planet.planetParts > 0){
+						totalCrew += extractShipParts - obj_planet.planetParts;
+						extractShipParts = obj_planet.planetParts;
+						obj_planet.planetParts = 0;
+						shipParts += extractShipParts;
+					}
+				}else if (shipParts > (50 - extractShipParts) and shipParts < 50){
+					
+					totalCrew += extractShipParts;
+					
+					if (obj_planet.planetParts >= (50 - shipParts)){
+						extractShipParts = 50 - shipParts;
+						obj_planet.planetParts -= extractShipParts;
+						totalCrew -= extractShipParts;
+						shipParts += extractShipParts;
+					}else if (obj_planet.planetParts > 0){
+						extractShipParts = obj_planet.planetParts;
+						obj_planet.planetParts = 0;
+						totalCrew -= extractShipParts;
+						shipParts += extractShipParts;
+					}		
 				}
 				
 				//alien attack scenario
-				if (irandom_range(0, 100) == 1){
-					if (extractFuel > 0){
-						extractFuel = scr_event("alien", extractFuel);
-					}else if (extractFood > 0){
-						extractFood = scr_event("alien", extractFood);
-					}else if (extractShipParts > 0){
-						extractShipParts = scr_event("alien", extractShipParts);
-					}
-				}else if (irandom_range(0, 50) == 1){		//crew recruitment event
-					scr_event("crew", 1);
+			if (irandom_range(0, 100) == 1){
+				if (extractFuel > 0){
+					extractFuel = scr_event("alien", extractFuel);
+				}else if (extractFood > 0){
+					extractFood = scr_event("alien", extractFood);
+				}else if (extractShipParts > 0){
+					extractShipParts = scr_event("alien", extractShipParts);
 				}
+			}else if (irandom_range(0, 50) == 1){		//crew recruitment event
+				scr_event("crew", 1);
+			}
 			}else if (instance_exists(obj_asteroid)){
-				if (obj_asteroid.asteroidFuel >= extractFuel > 0 and shipFuel <= (fuelTank - extractFuel)){
-					obj_asteroid.asteroidFuel -= extractFuel;
-					shipFuel += extractFuel;
+				if (shipFuel <= (fuelTank - extractFuel)){	
+					if (obj_asteroid.asteroidFuel >= extractFuel){ 
+						obj_asteroid.asteroidFuel -= extractFuel;
+						shipFuel += extractFuel;
+					}else if (obj_asteroid.asteroidFuel > 0){
+						totalCrew += extractFuel - obj_asteroid.asteroidFuel;
+						extractFuel = obj_asteroid.asteroidFuel;
+						obj_asteroid.asteroidFuel = 0;
+						shipFuel += extractFuel;
+					}
+				}else if (shipFuel > (fuelTank - extractFuel) and shipFuel < fuelTank){
+						
+					totalCrew += extractFuel;
+					
+					if (obj_asteroid.asteroidFuel >= (fuelTank - shipFuel)){
+						extractFuel = fuelTank - shipFuel;
+						obj_asteroid.asteroidFuel -= extractFuel;
+						totalCrew -= extractFuel;
+						shipFuel += extractFuel;
+					}else if (obj_asteroid.asteroidFuel > 0){
+						extractFuel = obj_asteroid.asteroidFuel;
+						obj_asteroid.asteroidFuel = 0;
+						totalCrew -= extractFuel;
+						shipFuel += extractFuel;
+					}		
 				}
 			}else if (instance_exists(obj_star)){
-				if (obj_star.starFuel >= extractFuel > 0 and shipFuel <= (fuelTank - extractFuel)){
-					obj_star.starFuel -= extractFuel;
-					shipFuel += extractFuel;
+				if (shipFuel <= (fuelTank - extractFuel)){	
+					if (obj_star.starFuel >= extractFuel){ 
+						obj_star.starFuel -= extractFuel;
+						shipFuel += extractFuel;
+					}else if (obj_star.starFuel > 0){
+						totalCrew += extractFuel - obj_star.starFuel;
+						extractFuel = obj_star.starFuel;
+						obj_star.starFuel = 0;
+						shipFuel += extractFuel;
+					}
+				}else if (shipFuel > (fuelTank - extractFuel) and shipFuel < fuelTank){
+						
+					totalCrew += extractFuel;
+					
+					if (obj_star.starFuel >= (fuelTank - shipFuel)){
+						extractFuel = fuelTank - shipFuel;
+						obj_star.starFuel -= extractFuel;
+						totalCrew -= extractFuel;
+						shipFuel += extractFuel;
+					}else if (obj_star.starFuel > 0){
+						extractFuel = obj_star.starFuel;
+						obj_star.starFuel = 0;
+						totalCrew -= extractFuel;
+						shipFuel += extractFuel;
+					}		
 				}
-				
+			
 				if (irandom_range(0, 100) == 1 and extractFuel > 0){
 					extractFuel = scr_event("environment", extractFuel);
 				}
 			}
-			
+		
 			//these checks are to ensure you don't go over the variable caps
 			if (foodStorage > foodBox ){
 				foodStorage = foodBox;
 			}
-			
+		
 			if (shipFuel > fuelTank){
 				shipFuel = fuelTank;
 			}

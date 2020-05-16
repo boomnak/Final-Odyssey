@@ -1,4 +1,4 @@
 
-if (obj_timer.gameTime > 1){
-	calamitySpeed = obj_timer.gameTime;	
+if (obj_timer.gameTime > 3){
+	calamitySpeed = obj_timer.gameTime-1;	
 }
