@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0099c8fc-9fe0-41e1-909f-952a847b174c",
+            "Value": {
+                "id": "3c7a8856-8a5c-432e-9ebc-6e54aecfedfc",
+                "resourcePath": "sprites\\spr_calamityTimer\\spr_calamityTimer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "023de082-f510-4f9d-ad42-0cb93e55da68",
             "Value": {
                 "id": "986ed932-a96f-4890-ae86-792aa7c90a56",
@@ -92,6 +100,14 @@
                 "id": "fabf6eb7-e0d4-41f4-a8c2-f7fb2c183df0",
                 "resourcePath": "sprites\\unused\\unused.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "18623760-04c8-49b0-a1e8-c1d4cb86e6af",
+            "Value": {
+                "id": "06fd6a33-a9a3-4987-8b64-d3e33ed03d34",
+                "resourcePath": "objects\\obj_mineCard\\obj_mineCard.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -196,6 +212,14 @@
                 "id": "54cfda82-d972-40b6-a1ae-e9ca6cecdb03",
                 "resourcePath": "sprites\\spr_leaveBTN\\spr_leaveBTN.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "379bbc0b-23c6-43e6-b9d4-9e2bfb754856",
+            "Value": {
+                "id": "a3c8bb40-40d3-403a-8e91-eb9ddf62f52a",
+                "resourcePath": "objects\\obj_upgradeBTN\\obj_upgradeBTN.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -315,6 +339,14 @@
             "Value": {
                 "id": "61c6c77f-86fd-4df0-8842-12ce38f4c160",
                 "resourcePath": "sprites\\spr_cm_planet\\spr_cm_planet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6e42fe9e-de88-4389-b655-1b3d9de22f77",
+            "Value": {
+                "id": "d23fbf3c-ea71-4f97-a8dc-491e1491b19b",
+                "resourcePath": "sprites\\spr_mineCard\\spr_mineCard.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -588,6 +620,14 @@
                 "id": "fc3ab085-2968-4367-a61c-aea9b78c9399",
                 "resourcePath": "objects\\obj_cm_showMenu\\obj_cm_showMenu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b6122591-492c-4bfc-b447-e610186b31f7",
+            "Value": {
+                "id": "3fd6a506-86c3-4d0d-b44b-02f58e06f9aa",
+                "resourcePath": "sprites\\spr_upgradeBTN\\spr_upgradeBTN.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

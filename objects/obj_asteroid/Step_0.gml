@@ -15,6 +15,7 @@ if (!obj_spaceShip.pauseGame){
 	}else if (obj_spaceShip.planetExtract and !objCreated){
 		scr_createRBox(0, display_get_gui_height()/5);
 		objCreated = true;
+		//obj_spaceShip.pauseGame = true;
 	}
 
 	

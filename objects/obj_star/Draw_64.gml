@@ -1,7 +1,7 @@
 draw_set_colour(c_yellow);
 
 if(obj_spaceShip.planetExtract and objCreated){	
-	if (!obj_spaceShip.pauseGame){
+	if (!instance_exists(obj_shipUpgradeMenu)){
 		draw_text(obj_msgBOX.x+5, obj_msgBOX.y, "Star Resources");
 		draw_text(obj_msgBOX.x+5, obj_msgBOX.y+15, "Star Fuel: "+string(starFuel));
 	}
@@ -10,7 +10,7 @@ if(obj_spaceShip.planetExtract and objCreated){
 	draw_text_transformed(0, obj_spaceShip.btnArr[1].y, "Fuel", 4, 4, 0);
 	draw_text_transformed(xval, obj_spaceShip.btnArr[1].y, string(obj_spaceShip.extractFuel), 4, 4, 0);
 	
-}else if (init_scale != 0 and !selected){
+}else if (init_scale != 0 and !selected and !instance_exists(obj_shipUpgradeMenu)){
 	xval = x - (sprite_get_width(spr_star)/2) * (init_scale/2);
 	yval = y + (sprite_get_height(spr_star)/2) * (init_scale/2);
 	

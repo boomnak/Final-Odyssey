@@ -6,5 +6,5 @@ if (obj_spaceShip.pauseGame == false){
 	}
 
 
-	actualTime += delta_time/1000000;	//adds 1 every second
+	actualTime += delta_time/1000000;
 }

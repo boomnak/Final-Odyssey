@@ -5,7 +5,7 @@ if (instance_position(mouse_x, mouse_y, obj_recruitmentCard) == id){
 		obj_spaceShip.totalCrew++;
 		instance_destroy(id, true);
 	}
-}else if (keyboard_check(vk_space) or !obj_spaceShip.planetExtract){
+}else if (obj_spaceShip.pauseGame or !obj_spaceShip.planetExtract){
 	instance_destroy(id, true);
 }
 

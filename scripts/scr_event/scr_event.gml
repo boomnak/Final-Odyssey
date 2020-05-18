@@ -23,6 +23,12 @@ if (argument0 == "alien"){
 	}else{
 		instance_create_layer(display_get_gui_width()/2, obj_planet.y, "instances", obj_recruitmentCard);
 	}
+}else if (argument0 == "mine"){
+	if (instance_exists(obj_mineCard)){
+		instance_destroy(obj_mineCard.id, true);
+	}
+	
+	instance_create_layer(display_get_gui_width()/2, obj_asteroid.y, "instances", obj_mineCard);
 }
 
 return (argument1-1);

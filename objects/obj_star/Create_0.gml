@@ -9,4 +9,3 @@ selected = false;
 
 var scale_top;
 init_scale = 0;
-//add hazard event later

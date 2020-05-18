@@ -1,6 +1,6 @@
 if (!obj_spaceShip.planetExtract){
 	instance_destroy(id, true);
-}else if (!obj_spaceShip.pauseGame){
+}else{
 	if (mouse_check_button_pressed(mb_left) and instance_position( mouse_x, mouse_y, obj_rightBTN) == id ){
 		if (obj_spaceShip.totalCrew > 0){
 			if (id == obj_spaceShip.btnArr[1]){

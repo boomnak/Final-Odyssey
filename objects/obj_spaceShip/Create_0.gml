@@ -10,6 +10,8 @@ calamityDistance = 100;
 nextObj = 0;
 shipParts = 0;
 
+calScale = 0;
+
 var initDist;
 var objectIndex;
 

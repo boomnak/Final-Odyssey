@@ -19,7 +19,8 @@ if (!obj_spaceShip.pauseGame){
 		scr_createRBox(0, (display_get_gui_height()/5)+yval);
 		scr_createRBox(0, (display_get_gui_height()/5)+(yval*2));
 			
-		objCreated = true;		
+		objCreated = true;	
+		//obj_spaceShip.pauseGame = true;
 	}
 
 	
