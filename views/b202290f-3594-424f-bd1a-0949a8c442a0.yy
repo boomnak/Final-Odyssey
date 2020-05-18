@@ -25,7 +25,8 @@
         "3da9ab41-704f-4242-9113-95fea7e959cb",
         "8498746b-8c7a-45fc-9099-a3dcda322bea",
         "fbd55e82-6723-47e1-b6da-5ca85b8f7a6e",
-        "379bbc0b-23c6-43e6-b9d4-9e2bfb754856"
+        "379bbc0b-23c6-43e6-b9d4-9e2bfb754856",
+        "c69f2c6a-c0c9-470a-9970-bd2a8677f25b"
     ],
     "filterType": "GMObject",
     "folderName": "Menu Objects",
