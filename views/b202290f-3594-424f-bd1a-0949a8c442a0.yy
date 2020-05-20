@@ -26,7 +26,15 @@
         "8498746b-8c7a-45fc-9099-a3dcda322bea",
         "fbd55e82-6723-47e1-b6da-5ca85b8f7a6e",
         "379bbc0b-23c6-43e6-b9d4-9e2bfb754856",
-        "c69f2c6a-c0c9-470a-9970-bd2a8677f25b"
+        "c69f2c6a-c0c9-470a-9970-bd2a8677f25b",
+        "fb8b2510-a9f4-4961-a36c-aff7bdb318db",
+        "c6dab20c-280c-4523-b520-1a9ad9c6a74a",
+        "99c95bc8-e403-4523-90ae-9922b9cbe134",
+        "dbf65c32-e401-4074-86eb-7d567e08a986",
+        "bf489ad3-b9a8-434e-bd68-8665f0d18b7d",
+        "acfee501-5289-4181-9f25-2247473aee10",
+        "00014d07-20a1-454f-ab1c-26d19c522a45",
+        "0bd11644-42d2-4fc3-9827-17bca9fd1cc4"
     ],
     "filterType": "GMObject",
     "folderName": "Menu Objects",

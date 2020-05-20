@@ -1,7 +1,7 @@
-draw_set_colour(c_yellow);
+draw_set_colour(c_white);
 
 if(obj_spaceShip.planetExtract and objCreated){ 
-	if (!instance_exists(obj_shipUpgradeMenu)){
+	if (!instance_exists(obj_shipUpgradeMenu) and !instance_exists(obj_optionsMenu)){
 		draw_text(obj_msgBOX.x+5, obj_msgBOX.y, "Planet Resources");
 		draw_text(obj_msgBOX.x+5, obj_msgBOX.y+15, "Planet Fuel: "+string(planetFuel));
 		draw_text(obj_msgBOX.x+5, obj_msgBOX.y+30, "Planet Food: "+string(planetFood));
@@ -22,7 +22,7 @@ if(obj_spaceShip.planetExtract and objCreated){
 	draw_text_transformed(0, obj_spaceShip.btnArr[5].y,"Parts", 4, 4, 0);
 	draw_text_transformed(xval, obj_spaceShip.btnArr[5].y, string(obj_spaceShip.extractShipParts), 4, 4, 0);
 	
-}else if (init_scale != 0 and !selected and !instance_exists(obj_shipUpgradeMenu)){
+}else if (init_scale != 0 and !selected and !instance_exists(obj_shipUpgradeMenu) and !instance_exists(obj_optionsMenu)){
 	xval = x - (sprite_get_width(spr_planet)/2) * (init_scale/2);
 	yval = y + (sprite_get_height(spr_planet)/2) * (init_scale/2);
 	

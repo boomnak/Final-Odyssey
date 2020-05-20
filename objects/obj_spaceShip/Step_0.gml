@@ -237,6 +237,42 @@ if (!pauseGame){
 						totalCrew += extractFuel;
 						extractFuel = 0;
 					}
+					
+					if (shipParts <= (50 - extractShipParts)){	
+						if (obj_asteroid.asteroidParts >= extractShipParts){ 
+							obj_asteroid.asteroidParts -= extractShipParts;
+							shipParts += extractShipParts;
+						}else if (obj_asteroid.asteroidParts > 0){
+							totalCrew += extractShipParts - obj_asteroid.asteroidParts;
+							extractShipParts = obj_asteroid.asteroidParts;
+							obj_asteroid.asteroidParts = 0;
+							shipParts += extractShipParts;
+						}else {
+							totalCrew += extractShipParts;
+							extractShipParts = 0;
+						}
+					}else if (shipParts > (50 - extractShipParts) and shipParts < 50){
+					
+						totalCrew += extractShipParts;
+					
+						if (obj_asteroid.asteroidParts >= (50 - shipParts)){
+							extractShipParts = 50 - shipParts;
+							obj_asteroid.asteroidParts -= extractShipParts;
+							totalCrew -= extractShipParts;
+							shipParts += extractShipParts;
+						}else if (obj_asteroid.asteroidParts > 0){
+							extractShipParts = obj_asteroid.asteroidParts;
+							obj_asteroid.asteroidParts = 0;
+							totalCrew -= extractShipParts;
+							shipParts += extractShipParts;
+						}else {
+							totalCrew += extractShipParts;
+							extractShipParts = 0;
+						}		
+					}else {
+						totalCrew += extractShipParts;
+						extractShipParts = 0;
+					}
 				
 					if (extractFuel > 0 and irandom_range(0, 100) == 1){
 						extractFuel = scr_event("mine", extractFuel);
@@ -306,7 +342,7 @@ if (!pauseGame){
 	if (foodStorage <= 0 or calamityDistance <= 0 or ((totalCrew + extractFood + extractFuel + extractShipParts) <= 0)){
 		//output game over and total days survived
 		//reset all objects and values
-		room_goto(rm_mainMenu);
+		room_goto(rm_gameOver);
 	}
 }else if (nextObj <= 0 and !planetExtract and pauseGame){
 	
@@ -318,7 +354,7 @@ if (!pauseGame){
 		}			
 		
 	//user selects next object destination, then the other objects are destroyed 
-	}else if (mouse_check_button_pressed(mb_left) and !instance_exists(obj_shipUpgradeMenu)){
+	}else if (mouse_check_button_pressed(mb_left) and !instance_exists(obj_shipUpgradeMenu) and !instance_exists(obj_optionsMenu)){
 		if (collision_point(mouse_x, mouse_y, objArr[0], false, true)){      
             
 			nextObj = objDistance[0];            

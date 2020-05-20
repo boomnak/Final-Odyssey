@@ -1,0 +1,3 @@
+instance_activate_object(obj_om_controls);
+instance_activate_object(obj_om_crew);
+instance_activate_object(obj_om_quit);

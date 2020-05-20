@@ -25,10 +25,18 @@ if (argument0 == "fuel"){
 		return false;
 	}
 }else if (argument0 == "parts"){
-	if (obj_planet.planetParts > 0){
-		return true;
-	}else{
-		return false;
+	if (instance_exists(obj_planet)){
+		if (obj_planet.planetParts > 0){
+			return true;
+		}else{
+			return false;
+		}
+	}else if (instance_exists(obj_asteroid)){
+		if (obj_asteroid.asteroidParts > 0){
+			return true;
+		}else{
+			return false;
+		}
 	}
 }
 

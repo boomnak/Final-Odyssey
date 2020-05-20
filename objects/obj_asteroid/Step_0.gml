@@ -13,9 +13,15 @@ if (!obj_spaceShip.pauseGame){
 	
 		obj_spaceShip.movObj = false;
 	}else if (obj_spaceShip.planetExtract and !objCreated){
+		yval = sprite_get_height(spr_resourceBox) * obj_msgBOX.scale_by;
+		
 		scr_createRBox(0, display_get_gui_height()/5);
+
+		obj_spaceShip.curPos += 2;
+
+		scr_createRBox(0, (display_get_gui_height()/5)+yval);
+
 		objCreated = true;
-		//obj_spaceShip.pauseGame = true;
 	}
 
 	
