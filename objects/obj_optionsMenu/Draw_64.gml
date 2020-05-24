@@ -1,3 +1,4 @@
+draw_set_font(open_sans);
 draw_set_colour(c_white);
 
 if (image_index == 2){

@@ -1,3 +1,4 @@
+draw_set_font(open_sans);
 draw_set_colour(c_yellow);
 
 xval = x - sprite_get_width(spr_um_FuelUpgrade)/2;
