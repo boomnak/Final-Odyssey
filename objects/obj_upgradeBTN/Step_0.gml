@@ -1,4 +1,4 @@
-if (mouse_check_button_pressed(mb_left) and collision_point(mouse_x, mouse_y, obj_upgradeBTN, false, false)){
+if (mouse_check_button_pressed(mb_left) and collision_point(mouse_x, mouse_y, obj_upgradeBTN, false, false) and !instance_exists(obj_optionsMenu)){
 	
 	if (!obj_spaceShip.pauseGame){
 		obj_spaceShip.pauseGame = true;
