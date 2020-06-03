@@ -2,7 +2,7 @@ draw_set_font(open_sans);
 draw_set_colour(c_white);
 
 if (image_index == 2){
-	xval = x-sprite_get_width(spr_textBox);
+	xval = x-sprite_get_width(spr_textBox)/2;
 	yval = y-sprite_get_height(spr_textBox);
 	
 	draw_text(xval, yval-45, string("Your total crew: "+string(obj_spaceShip.totalCrew)));

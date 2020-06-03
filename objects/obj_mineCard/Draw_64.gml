@@ -1,4 +1,4 @@
-draw_set_font(open_sans_big);
+draw_set_font(open_sans);
 draw_set_colour(c_yellow);
 
 if (select == 0){

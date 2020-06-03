@@ -12,15 +12,27 @@ if (!obj_spaceShip.pauseGame){
 		image_yscale += scale_top / (obj_spaceShip.initDist / obj_spaceShip.curSpeed);
 	
 		obj_spaceShip.movObj = false;
-	}else if (obj_spaceShip.planetExtract and !objCreated){
-		yval = sprite_get_height(spr_resourceBox) * obj_msgBOX.scale_by;
+	}else if (obj_spaceShip.planetExtract){
+		if (!objCreated){
+			yval = sprite_get_height(spr_resourceBox) * obj_msgBOX.scale_by;
 		
-		scr_createRBox(0, display_get_gui_height()/5);
-		scr_createRBox(0, (display_get_gui_height()/5)+yval);
-		scr_createRBox(0, (display_get_gui_height()/5)+(yval*2));
+			scr_createRBox(0, display_get_gui_height()/5);
+			scr_createRBox(0, (display_get_gui_height()/5)+yval);
+			scr_createRBox(0, (display_get_gui_height()/5)+(yval*2));
 			
-		objCreated = true;	
-		//obj_spaceShip.pauseGame = true;
+			objCreated = true;
+		}else{
+			if (irandom_range(1, 20) == 10){
+				if (obj_spaceShip.extractFood > 0 or obj_spaceShip.extractFuel > 0 or obj_spaceShip.extractShipParts > 0){
+					xval = x - (sprite_get_width(spr_planet) /2);
+					xval2 = x + (sprite_get_width(spr_planet) /2);
+				
+					yval = y - (sprite_get_height(spr_planet) /2);
+					yval2 = y + (sprite_get_height(spr_planet) /2);
+					instance_create_layer(irandom_range(xval, xval2), irandom_range(yval, yval2), "instances", obj_meffect);
+				}
+			}
+		}
 	}
 
 	

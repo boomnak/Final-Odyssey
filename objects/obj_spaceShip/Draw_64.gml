@@ -12,3 +12,7 @@ if (pauseGame){
 	draw_text(0, 30, "Next Object: "+string(nextObj)+" SD");
 }
 
+if (nextObj <= 0 and !planetExtract and pauseGame){
+	draw_text(display_get_gui_width()/2.35, display_get_gui_height()/7 - 15, "Found the 3 closest celestial bodies...");
+	draw_text(display_get_gui_width()/2.22, display_get_gui_height()/7, "Select your next destination!");
+}
