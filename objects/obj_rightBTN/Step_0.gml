@@ -9,7 +9,7 @@ if (!obj_spaceShip.planetExtract){
 			}else if (id == obj_spaceShip.btnArr[3] and obj_spaceShip.foodStorage < obj_spaceShip.foodBox and scr_rCheck("food")){
 				obj_spaceShip.extractFood++;
 				obj_spaceShip.totalCrew--;
-			}else if (id == obj_spaceShip.btnArr[5] and obj_spaceShip.shipParts < 50 and scr_rCheck("parts")){
+			}else if (id == obj_spaceShip.btnArr[5] and obj_spaceShip.shipParts < 500 and scr_rCheck("parts")){
 				obj_spaceShip.extractShipParts++;
 				obj_spaceShip.totalCrew--;
 			}

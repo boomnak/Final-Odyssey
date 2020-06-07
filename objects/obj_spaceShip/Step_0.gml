@@ -151,7 +151,7 @@ if (!pauseGame){
 						extractFuel = 0;
 					}
 				
-					if (shipParts <= (50 - extractShipParts)){	
+					if (shipParts <= (500 - extractShipParts)){	
 						if (obj_planet.planetParts >= extractShipParts){ 
 							obj_planet.planetParts -= extractShipParts;
 							shipParts += extractShipParts;
@@ -164,12 +164,12 @@ if (!pauseGame){
 							totalCrew += extractShipParts;
 							extractShipParts = 0;
 						}
-					}else if (shipParts > (50 - extractShipParts) and shipParts < 50){
+					}else if (shipParts > (500 - extractShipParts) and shipParts < 500){
 					
 						totalCrew += extractShipParts;
 					
-						if (obj_planet.planetParts >= (50 - shipParts)){
-							extractShipParts = 50 - shipParts;
+						if (obj_planet.planetParts >= (500 - shipParts)){
+							extractShipParts = 500 - shipParts;
 							obj_planet.planetParts -= extractShipParts;
 							totalCrew -= extractShipParts;
 							shipParts += extractShipParts;
@@ -238,7 +238,7 @@ if (!pauseGame){
 						extractFuel = 0;
 					}
 					
-					if (shipParts <= (50 - extractShipParts)){	
+					if (shipParts <= (500 - extractShipParts)){	
 						if (obj_asteroid.asteroidParts >= extractShipParts){ 
 							obj_asteroid.asteroidParts -= extractShipParts;
 							shipParts += extractShipParts;
@@ -251,12 +251,12 @@ if (!pauseGame){
 							totalCrew += extractShipParts;
 							extractShipParts = 0;
 						}
-					}else if (shipParts > (50 - extractShipParts) and shipParts < 50){
+					}else if (shipParts > (500 - extractShipParts) and shipParts < 500){
 					
 						totalCrew += extractShipParts;
 					
-						if (obj_asteroid.asteroidParts >= (50 - shipParts)){
-							extractShipParts = 50 - shipParts;
+						if (obj_asteroid.asteroidParts >= (500 - shipParts)){
+							extractShipParts = 500 - shipParts;
 							obj_asteroid.asteroidParts -= extractShipParts;
 							totalCrew -= extractShipParts;
 							shipParts += extractShipParts;
