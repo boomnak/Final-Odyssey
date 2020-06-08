@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "250f7091-c409-4ada-8044-724688b19af1",
+            "Value": {
+                "id": "013e8697-1f71-41ac-bbe7-d8c50532f179",
+                "resourcePath": "objects\\obj_achievement\\obj_achievement.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "25206d54-700d-4884-a838-ab0b4bc9932e",
             "Value": {
                 "id": "356e214f-da91-4861-8538-2a0e29e1f576",
@@ -591,6 +599,14 @@
             }
         },
         {
+            "Key": "980bbff3-7784-40b2-9652-8cc29980ad35",
+            "Value": {
+                "id": "d8ac744f-f6e9-421b-9b7a-8963f39218b0",
+                "resourcePath": "objects\\obj_trophy\\obj_trophy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9980ad54-d57c-4f0b-84e7-18a68014fadc",
             "Value": {
                 "id": "0e46987e-2911-43fe-9712-a197633bd199",
@@ -796,6 +812,14 @@
                 "id": "9836b49b-fa1d-452a-aeae-6ef851e28490",
                 "resourcePath": "objects\\obj_calamityDistMenu\\obj_calamityDistMenu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c27be6a8-6e5e-4ff7-9a83-deaa3c301125",
+            "Value": {
+                "id": "c725e780-3e6b-4060-85dd-ab9f4dcf6889",
+                "resourcePath": "sprites\\spr_trophy\\spr_trophy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
